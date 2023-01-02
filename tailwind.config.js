@@ -5,7 +5,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        bannerImg: "url('/img/hero-image-1.png')"
+      },
+      height: {
+        bannerImg: '450px'
+      }
+    },
   },
   plugins: [],
 }
