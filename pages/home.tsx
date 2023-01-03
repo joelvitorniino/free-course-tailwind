@@ -101,6 +101,49 @@ export default function Home() {
                     </div>
                 </div>
                 {/* /featured resort */}
+
+                {/* resorts grid */}
+                <div>
+                    <div className="container mx-auto px-4">
+                        <h3 className="text-2xl text-gray-500 font-semibold text-center mb-8">Conheça mais resorts</h3>
+
+                        <div className="grid grid-cols-4 grid-rows-2 gap-6">
+                            <div className="relative col-span-2 row-span-2 rounded-lg overflow-hidden">
+                                <div className="absolute botton-0 pl-4 pb-4 text-white font-bold z-20">
+                                    Beach Park Resort
+                                </div>
+                                <Image src="/img/image-shadow.png" width="0" height="0" className="absolute bottom-0 left-0 right-0 h-20 z-10" alt="shadow" />
+                                <Image src="/img/hotel-1.jpeg" width="0" height="0" alt="hotel" sizes='100vw' className="w-full h-full object-cover" />
+                            </div>
+                            <div className="relative col-span-2 h-40 rounded-lg overflow-hidden">
+                            <div className="absolute botton-0 pl-4 pb-4 text-white font-bold z-20">
+                                    Salinas do Maragogi Resort
+                                </div>
+                                <Image src="/img/image-shadow.png" width="0" height="0" className="absolute bottom-0 left-0 right-0 h-20 z-10" alt="shadow" />
+                                <Image src="/img/hotel-2.jpeg"  width="0" height="0" alt="hotel" sizes='100vw' className="w-full h-full object-cover"/>
+                            </div>
+                            <div className="relative rounded-lg overflow-hidden">
+                            <div className="absolute botton-0 pl-4 pb-4 text-white font-bold z-20">
+                                    grand Palladium
+                                </div>
+                                <Image src="/img/image-shadow.png" width="0" height="0" className="absolute bottom-0 left-0 right-0 h-20 z-10" alt="shadow" />
+                                <Image src="/img/hotel-3.jpeg" width="0" height="0" alt="hotel" sizes='100vw' className="w-full h-full object-cover" />
+                            </div>
+                            <div className="relative rounded-lg overflow-hidden">
+                            <div className="absolute botton-0 pl-4 pb-4 text-white font-bold z-20">
+                                    Arrial'dAjuda Eco Resort
+                                </div>
+                                <Image src="/img/image-shadow.png" width="0" height="0" className="absolute bottom-0 left-0 right-0 h-20 z-10" alt="shadow" />
+                                <Image src="/img/hotel-4.jpeg" alt="hotel" width="0" height="0" sizes='100vw' className="w-full h-full object-cover" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* /resorts grid */}
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </div>
         </>
     )
