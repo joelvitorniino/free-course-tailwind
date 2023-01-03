@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
                 <title>Home page</title>
             </Head>
 
-            <div className="bg-gray-50">
+            <div className="bg-gray-50 text-gray-600">
                 {/* header */}
                 <div>
                     <div className="container mx-auto px-4 h-24 flex items-center">
@@ -48,7 +49,7 @@ export default function Home() {
 
                         <div className="mt-7">
                             <form>
-                                <select className="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
+                                <select className="bg-gray-50 px-3 py-2 mr-3 border border-gray-300 rounded text-gray-500">
                                     <option value="">Escolha estado</option>
                                 </select>
 
@@ -56,7 +57,7 @@ export default function Home() {
                                     <option value="">Escolha cidade</option>
                                 </select>
 
-                                <button className="inline-flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded ml-5">
+                                <button className="inline-flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded ml-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 mr-2">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                                     </svg>
@@ -69,6 +70,37 @@ export default function Home() {
                     </div>
                 </div>
                 {/* /banner */}
+
+                {/* featured resort */}
+                <div>
+                    <div className="container mx-auto px-4 py-10">
+                        <div className="flex">
+                            <div>
+                                <div className="text-sm text-gray-400 font-medium">RESORT EM DESTAQUE</div>
+                                <div className="text-2xl">Ecoresort Praia do Forte Bahia</div>
+                                <div className="text-sm text-gray-400 font-medium mt-2">Hotel qualidade 5 estrelas</div>
+                                <div className="text-sm text-gray-400 font-medium mt-4">
+                                    <p className="mb-4">Lorem ipsum dolor sit amet, consectur</p>
+                                    <p>Lorem ipsum dolor sit amet, consectur</p>
+                                </div>
+
+                                <div className="mt-4">
+                                <Link href="#" className="inline-flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded ml-3">
+                                    Solicitar reserva
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-3">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                    </svg>
+                                </Link>
+                                </div>
+                            </div>
+
+                            <div className="flex-shrink-0 ml-auto">
+                                <Image src="/img/featured-img.png" width={450} height={0} alt="resort"></Image>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* /featured resort */}
             </div>
         </>
     )
