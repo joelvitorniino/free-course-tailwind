@@ -69,8 +69,8 @@ export default function Home() {
               </div>
 
               <div className="mt-7">
-                <form>
-                  <select className="bg-gray-50 px-3 py-2 mr-3 border border-gray-300 rounded text-gray-500">
+                <form className="space-x-4">
+                  <select className="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
                     <option value="">Escolha estado</option>
                   </select>
 
@@ -104,7 +104,7 @@ export default function Home() {
 
         {/* featured resort */}
         <div>
-          <div className="container mx-auto px-4 py-10">
+          <div className="container mx-auto px-4 py-15">
             <div className="flex">
               <div>
                 <div className="text-sm text-gray-400 font-medium">
@@ -249,10 +249,54 @@ export default function Home() {
         </div>
         {/* /resorts grid */}
 
-        <br />
-        <br />
-        <br />
-        <br />
+        {/* form search */}
+        <div className="py-20">
+          <div className="container mx-auto px-4 flex justify-center">
+          <form className="space-x-4">
+                  <select className="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
+                    <option value="">Escolha estado</option>
+                  </select>
+
+                  <select className="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
+                    <option value="">Escolha cidade</option>
+                  </select>
+
+                  <button className="inline-flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded ml-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-4 h-4 mr-2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                      />
+                    </svg>
+                    Pesquisar resorts
+                  </button>
+                </form>
+          </div>
+        </div>
+        {/* /form search */}
+
+        {/* footer */}
+        <div className="border-t border-gray-200">
+          <div className="container mx-auto px-4 flex items-center justify-between">
+            <div className="text-gray-400 font-black">
+              LOGO
+            </div>
+
+            <div className="flex items-center space-x-3">
+              <Link href=""><Image src="/img/icon-facebook.png" width={32} height={32} alt="facebook" /></Link>
+              <Link href=""><Image src="/img/icon-instagram.png" width={32} height={32} alt="instagram" /></Link>
+            </div>
+          </div>
+        </div>
+        {/* /footer */}
       </div>
     </>
   );
