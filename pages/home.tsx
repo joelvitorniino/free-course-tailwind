@@ -12,7 +12,7 @@ export default function Home() {
       <div className="bg-gray-50 text-gray-600">
         {/* header */}
         <div>
-          <div className="container mx-auto px-4 h-24 flex items-center">
+          <div className="container max-w-5xl mx-auto px-4 h-24 flex items-center">
             <div className="font-black">LOGO</div>sdsd
             <ul className="flex item-center ml-auto space-x-4">
               <li>
@@ -57,7 +57,7 @@ export default function Home() {
 
         {/* banner */}
         <div className="bg-bannerImg h-bannerImg">
-          <div className="container mx-auto px-4 h-full flex items-center justify-center">
+          <div className="container max-w-5xl mx-auto px-4 h-full flex items-center justify-center">
             <div>
               <div className="text-center">
                 <h1 className="text-gray-200 text-3xl mb-1">
@@ -104,9 +104,9 @@ export default function Home() {
 
         {/* featured resort */}
         <div>
-          <div className="container mx-auto px-4 py-15">
-            <div className="flex">
-              <div>
+          <div className="container max-w-5xl mx-auto px-4 py-20">
+            <div className="flex flex-col-reverse lg:flex-row">
+              <div className="lg:pr-10">
                 <div className="text-sm text-gray-400 font-medium">
                   RESORT EM DESTAQUE
                 </div>
@@ -143,7 +143,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex-shrink-0 ml-auto">
+              <div className="flex-shrink-0 lg:ml-auto mb-5 lg:mb-0">
                 <Image
                   src="/img/featured-img.png"
                   width={450}
@@ -158,13 +158,13 @@ export default function Home() {
 
         {/* resorts grid */}
         <div>
-          <div className="container mx-auto px-4">
+          <div className="container max-w-5xl mx-auto px-4">
             <h3 className="text-2xl text-gray-500 font-semibold text-center mb-8">
               Conheça mais resorts
             </h3>
 
-            <div className="grid grid-cols-4 grid-rows-2 gap-6">
-              <div className="flex items-end col-span-2 row-span-2 rounded-lg overflow-hidden">
+            <div className="md:grid md:grid-cols-4 md:grid-rows-2 md:gap-6 space-y-6 md:space-y-0">
+              <div className="flex items-end md:col-span-2 md:row-span-2 rounded-lg overflow-hidden">
                 <div className="absolute botton-0 pl-4 pb-4 text-white font-bold z-20">
                   Beach Park Resort
                 </div>
@@ -184,7 +184,7 @@ export default function Home() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="flex items-end col-span-2 h-40 rounded-lg overflow-hidden">
+              <div className="flex items-end md:col-span-2 md:h-40 rounded-lg overflow-hidden">
                 <div className="absolute botton-0 pl-4 pb-4 text-gray-700 font-bold z-20">
                   Salinas do Maragogi Resort
                 </div>
@@ -251,8 +251,8 @@ export default function Home() {
 
         {/* form search */}
         <div className="py-20">
-          <div className="container mx-auto px-4 flex justify-center">
-          <form className="space-x-4">
+          <div className="container max-w-5xl mx-auto px-4 flex justify-center">
+          <form className="grid grid-cols-2 lg:grid-cols-3 gap-4">
                   <select className="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
                     <option value="">Escolha estado</option>
                   </select>
@@ -261,7 +261,7 @@ export default function Home() {
                     <option value="">Escolha cidade</option>
                   </select>
 
-                  <button className="inline-flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded ml-3">
+                  <button className="col-span-2 lg:col-span-1 inline-flex items-center justify-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded ml-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -285,7 +285,7 @@ export default function Home() {
 
         {/* footer */}
         <div className="border-t border-gray-200">
-          <div className="container mx-auto px-4 flex items-center justify-between">
+          <div className="container max-w-5xl mx-auto px-4 flex items-center justify-between">
             <div className="text-gray-400 font-black">
               LOGO
             </div>
